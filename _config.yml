@@ -1,0 +1,48 @@
+# Site setings
+name: ''
+description: 'a personal blog about data and others topics'
+baseurl:
+production_url: https://luistt.es/
+disqus: 'anarkis'
+cover_image: bc.jpg
+# Add your GA Tracking Id
+ga_analytics:
+
+# Author
+author:
+  name: 'Luis'
+  image: 'profile.jpg'
+  greetings: 'Hi there!'
+  description: "I'm Luis, a Data Engineer passionated about security, data and data visualizations"
+
+# Contact form setings
+email: info@luistt.es
+
+# Social links
+github: 'anarkis'
+instagram: '1uistovar'
+linkedin: 'luistt'
+
+# Navigation
+
+# Required Plugins
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-tagsgenerator
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+# Permalinks
+permalink: /:title
+
+# Other
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
