@@ -1,0 +1,19 @@
+@startuml
+database mongoDB
+Bot -> SlackAPI: Authentication Request
+SlackAPI --> Bot: Authentication Response
+|||
+Bot -> SlackAPI: get all users
+Bot <-- SlackAPI: return users IDs
+|||
+Bot -> mongoDB: store all users
+mongoDB --> Bot: confirmation
+|||
+Bot -> SlackAPI: get the user's channel id
+SlackAPI --> Bot: return user's channel id
+|||
+Bot -> mongoDB: store all users's channels id
+mongoDB --> Bot: confirmation
+|||
+Bot -> SlackAPI: **send direct message**
+@enduml
