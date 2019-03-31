@@ -28,7 +28,7 @@ headers = {
   "origin" : "null"
 }
 ```
-
+<!--more-->
 I found quite interesting that they have in the code **fixed credentials** for identify yourself as a valid client.
 *Could those fixed credentials be used in other places?*
 
@@ -86,14 +86,14 @@ Now, we know:
 
 After checking how is the **refreshToken** with [JWT](https://jwt.io/) we see the below structure
 
-#####header
+###header
 ```json
 {
   "alg": "HS256",
   "typ": "JWT"
 }
 ```
-#####payload
+###payload
 ```json
 {
   "payload": {
